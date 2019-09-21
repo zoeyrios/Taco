@@ -1,0 +1,199 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.boardViewCard, .boardCreationCard {
+  padding: .75rem;
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: #1d3e53;
+  border: 1px solid rgba(86,61,124,.2);
+  margin: 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  &:hover {
+    background-color: #476d7c;
+  }
+}
+
+.boardCreationCard {
+  background: #254b62;
+}
+
+.title {
+  cursor: pointer;
+}
+
+body {
+  background: #283149;
+  color: white;
+}
+
+* {
+  transition: all 0.2s;
+}
+
+.card-header {
+  background: #282c34;
+}
+
+h2{
+  padding: 50px;
+}
+
+.modal-content {
+  background: #283149;
+}
+
+.column-container {
+  max-width: 380px;
+  .column {
+    background: #212325;
+    border-radius: 5px;
+    padding: 10px;
+    .column-name {
+      font-size: 20px;
+      font-weight: 700;
+      resize: none;
+      color: white;
+      &:not(:focus) {
+        border: none;
+        overflow: auto;
+        outline: none;
+        background: none;
+        cursor: pointer;
+      }
+      &:focus {
+        background: #181a1b;
+      }
+    }
+  }
+}
+
+.cards-container {
+  max-height: 59vh;
+  overflow-y: auto;
+}
+.card {
+  background: #181a1b;
+  margin: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+  &:hover {
+    background: #404b6965;
+  }
+  &.card-create {
+    background: #254b62;
+    &:hover {
+      background: #404b6965;
+    }
+  }
+}
+
+.card-description {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 30px;
+    resize: none;
+    color: white;
+    background: #283149;
+    min-height: 100px;
+    &:not(:focus) {
+      border: none;
+      overflow: auto;
+      outline: none;
+      background: #283149;
+      cursor: pointer;
+    }
+    &:focus {
+      background: #1e2538;
+      color: white;
+    }
+}
+
+.activity-input {
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 30px;
+  resize: none;
+  color: white;
+  background: #1e2538;
+  // min-height: 100px;
+  &:not(:focus) {
+    border: none;
+    overflow: auto;
+    outline: none;
+    background: #1e2538;
+    cursor: pointer;
+  }
+  &:focus {
+    background: #1e2538;
+    color: white;
+  }
+}
+
+.mrg-top-30 {
+  margin-top: 30px;
+}
+
+.noWrap {
+  flex-wrap: nowrap;
+}
+
+.board-container {
+  overflow-x: auto;
+  height: 96vh;
+  @media (min-width: 1200px) {
+    max-width: unset;
+  }
+}
+
+.login-card {
+  margin: 50px auto !important;
+  width: 400px;
+  max-width: 90%;
+  box-shadow: 1px 1px 5px black;
+  &:hover {
+    cursor: default;
+    background: #181a1b;
+  }
+  .card-title {
+    text-align: center;
+  }
+}
+
+.activity-entry{
+  padding: 20px;
+  background-color: #2b354d;
+  border-radius: 3px;
+}
